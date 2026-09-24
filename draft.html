@@ -14,10 +14,11 @@
         body {
             background-color: #0f172a;
             color: #f8fafc;
-            height: 100vh;
+            min-height: 100vh;           /* Changed from height: 100vh to allow scrolling on small screens */
             display: flex;
+            flex-direction: column;      /* Stacks header, content, and footer vertically */
+            justify-content: space-between; /* Pushes header to top, content to center, footer to bottom */
             align-items: center;
-            justify-content: center;
             text-align: center;
             padding: 20px;
         }
