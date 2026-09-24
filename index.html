@@ -34,15 +34,20 @@
             color: #d1d5db;
         }
 
-        /* Styled container for the patch image */
-        .patch-container {
+        /* Flex container to place patch and medal side-by-side */
+        .insignia-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem; /* Spacing between the patch and medal */
             margin-top: 1.5rem;
         }
 
-        .eagle-patch {
-            width: 200px; /* Adjust size as preferred */
-            height: auto;
-            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3)); /* Makes the patch pop against navy */
+        .insignia-img {
+            height: 110px; /* Constrains height so both items look proportional together */
+            width: auto;
+            max-width: 100%;
+            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3)); /* Drop shadow to pop from navy */
         }
 
         .container {
@@ -116,9 +121,10 @@
         <h1>Troop 2019 Eagle Scouts</h1>
         <p>Celebrating excellence and leadership</p>
         
-        <!-- Eagle Patch Image Placement -->
-        <div class="patch-container">
-            <img src="./eagle-patch.png" alt="Eagle Scout Rank Insignia" class="eagle-patch">
+        <!-- Insignia Visual Display Block -->
+        <div class="insignia-container">
+            <img src="eagle-patch.png" alt="Eagle Scout Rank Patch" class="insignia-img">
+            <img src="eagle-medal.png" alt="Eagle Scout Award Medal" class="insignia-img">
         </div>
     </header>
 
