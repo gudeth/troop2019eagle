@@ -45,6 +45,22 @@
             border: 1px solid #334155;
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
         }
+
+        /* Flex container to place patch and medal side-by-side */
+        .insignia-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem; /* Spacing between the patch and medal */
+            margin-top: 1.5rem;
+        }
+
+        .insignia-img {
+            height: 200px; /*110px; /* Constrains height so both items look proportional together */
+            width: auto;
+            max-width: 100%;
+            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3)); /* Drop shadow to pop from navy */
+        }
     </style>
 </head>
 <body>
