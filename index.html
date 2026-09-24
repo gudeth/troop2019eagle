@@ -5,33 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Troop 2019 Eagle Scouts</title>
     <style>
-        /* Modern & Clean Global Styles */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
-
-        header {
-            background-color: #0b2240; /* Classic Scout Navy */
-            color: white;
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Aligns items to the top instead of spreading them out */
+            align-items: center;
             text-align: center;
-            padding: 2.5rem 1rem;
+            padding: 20px;
+            gap: 2rem;                    /* Adds clean spacing between header, container, and footer */
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-            letter-spacing: 0.5px;
+        .container {
+            max-width: 600px;
+            width: 100%;
         }
-
-        header p {
-            margin: 0.5rem 0 0 0;
-            font-size: 1.1rem;
-            color: #d1d5db;
+        footer {
+            margin-top: auto;             /* Pushes the footer down to the very bottom of the page */
+            text-align: center;
+            padding: 2rem;
+        }
+        /* Add this to target the text inside the footer specifically */
+        footer p {
+            font-size: 0.9rem;
+            margin-bottom: 0; /* Also cleans up extra bottom spacing */
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .card {
+            margin-top: 4rem; /* Adjust this value (e.g., 2rem, 3rem, 4rem, 50px) to set the exact offset */
+            background: #1e293b;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        .scout-entry {
+            margin-bottom: 1.25rem;
+        }
+        
+        .scout-entry:last-child {
+            margin-bottom: 0;
+        }
+        
+        .scout-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #f8fafc;
+        }
+        
+        .scout-date {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin-top: 0.2rem; /* Keeps the date tight right below the name */
         }
 
         /* Flex container to place patch and medal side-by-side */
@@ -49,74 +94,9 @@
             max-width: 100%;
             filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3)); /* Drop shadow to pop from navy */
         }
-
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        /* Year Section Styles */
-        .year-section {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            border-left: 5px solid #ce1126; /* Scout Red Accent */
-        }
-
-        .year-title {
-            margin-top: 0;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-            color: #0b2240;
-            border-bottom: 2px solid #f3f4f6;
-            padding-bottom: 0.25rem;
-        }
-
-        /* Flexbox List Layout */
-        .scout-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-        }
-
-        .scout-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            padding: 0.25rem 0;
-            border-bottom: 1px dashed #e5e7eb;
-        }
-
-        .scout-row:last-child {
-            border-bottom: none;
-        }
-
-        .scout-name {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: #111827;
-        }
-
-        .scout-date {
-            font-size: 0.95rem;
-            color: #6b7280;
-            font-variant-numeric: tabular-nums;
-        }
-
-        /* Footer styling */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            color: #6b7280;
-        }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Troop 2019 Eagle Scouts</h1>
         <p>Celebrating excellence and leadership</p>
@@ -127,45 +107,24 @@
             <img src="./eagle-medal.png" alt="Eagle Scout Award Medal" class="insignia-img">
         </div>
     </header>
-
-    <div class="container">
-
-        <!-- Copy and paste this block for each new calendar year -->
-        <section class="year-section">
-            <h2 class="year-title">2026</h2>
-            <div class="scout-list">
-                <div class="scout-row">
-                    <span class="scout-name">Lisa A. Hahn</span>
-                    <span class="scout-date">May 19, 2026</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="year-section">
-            <h2 class="year-title">2025</h2>
-            <div class="scout-list">
-                <div class="scout-row">
-                    <span class="scout-name">Teagan M. Dixon</span>
-                    <span class="scout-date">June 24, 2025</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="year-section">
-            <h2 class="year-title">2023</h2>
-            <div class="scout-list">
-                <div class="scout-row">
-                    <span class="scout-name">Shirley L. Stockwell</span>
-                    <span class="scout-date">March 6, 2023</span>
-                </div>
-            </div>
-        </section>
-
+  
+    <div class="card">
+        <div class="scout-entry">
+            <div class="scout-name">Lisa A. Hahn</div>
+            <div class="scout-date">May 19, 2026</div>
+        </div>
+        <div class="scout-entry">
+            <div class="scout-name">Teagan M. Dixon</div>
+            <div class="scout-date">June 24, 2025</div>
+        </div>
+        <div class="scout-entry">
+            <div class="scout-name">Shirley L. Stockwell</div>
+            <div class="scout-date">March 6, 2023</div>
+        </div>
     </div>
 
     <footer>
         <p>Once an Eagle, Always an Eagle.</p>
     </footer>
-
 </body>
 </html>
