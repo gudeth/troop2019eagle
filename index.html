@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troop Eagle Scout Registry</title>
+    <style>
+        /* Modern & Clean Global Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0b2240; /* Classic Scout Navy */
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            color: #d1d5db;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Year Section Styles */
+        .year-section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-left: 5px solid #ce1126; /* Scout Red Accent */
+        }
+
+        .year-title {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #0b2240;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 0.25rem;
+        }
+
+        /* Flexbox List Layout */
+        .scout-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .scout-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0.25rem 0;
+            border-bottom: 1px dashed #e5e7eb;
+        }
+
+        .scout-row:last-child {
+            border-bottom: none;
+        }
+
+        .scout-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #111827;
+        }
+
+        .scout-date {
+            font-size: 0.95rem;
+            color: #6b7280;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Troop Eagle Scout Honor Roll</h1>
+        <p>Celebrating excellence and leadership since our founding</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Copy and paste this block for each new calendar year -->
+        <section class="year-section">
+            <h2 class="year-title">2026</h2>
+            <div class="scout-list">
+                <div class="scout-row">
+                    <span class="scout-name">Alexander P. Wright</span>
+                    <span class="scout-date">September 14, 2026</span>
+                </div>
+                <div class="scout-row">
+                    <span class="scout-name">Benjamin T. Miller</span>
+                    <span class="scout-date">March 22, 2026</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="year-section">
+            <h2 class="year-title">2025</h2>
+            <div class="scout-list">
+                <div class="scout-row">
+                    <span class="scout-name">Christopher M. Davis</span>
+                    <span class="scout-date">November 05, 2025</span>
+                </div>
+                <div class="scout-row">
+                    <span class="scout-name">Ethan J. Thomas</span>
+                    <span class="scout-date">June 18, 2025</span>
+                </div>
+                <div class="scout-row">
+                    <span class="scout-name">Gabriel R. Martinez</span>
+                    <span class="scout-date">January 12, 2025</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Once an Eagle, Always an Eagle.</p>
+    </footer>
+
+</body>
+</html>
