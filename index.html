@@ -34,6 +34,17 @@
             color: #d1d5db;
         }
 
+        /* Styled container for the patch image */
+        .patch-container {
+            margin-top: 1.5rem;
+        }
+
+        .eagle-patch {
+            width: 120px; /* Adjust size as preferred */
+            height: auto;
+            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3)); /* Makes the patch pop against navy */
+        }
+
         .container {
             max-width: 900px;
             margin: 2rem auto;
@@ -104,6 +115,11 @@
     <header>
         <h1>Troop Eagle Scout Honor Roll</h1>
         <p>Celebrating excellence and leadership since our founding</p>
+        
+        <!-- Eagle Patch Image Placement -->
+        <div class="patch-container">
+            <img src="eagle-patch.png" alt="Eagle Scout Rank Insignia" class="eagle-patch">
+        </div>
     </header>
 
     <div class="container">
